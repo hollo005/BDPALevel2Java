@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SuperHeroController {
     @RequestMapping("/superhero")
     public String greeting(Model model) {
-        model.addAttribute("name", "Super Hero Name");
-        model.addAttribute("power1", "A power that is super");
-        model.addAttribute("power2", "Another power that is super");
-        model.addAttribute("power3", "A third power that is super");
-        model.addAttribute("fact1", "This is fun fact is maybe not so fun");
-        model.addAttribute("fact2", "This is another fun fact");
-        model.addAttribute("fact3", "This is the third ");
+        model.addAttribute("name", "WonderWoman");
+        model.addAttribute("power1", "Can speak all languages including to animals");
+        model.addAttribute("power2", "Heals super fast");
+        model.addAttribute("power3", "Super human strength, speed and can fly!!!");
+        model.addAttribute("fact1", " She was born on an island called Themyscira");
+        model.addAttribute("fact2", "WonderWoman is Amozazonian");
+        model.addAttribute("fact3", "She dated SuperMan for a few years ");
 
         return "hero"; //Return "hero" to tell spring to use the hero.html template
     }
